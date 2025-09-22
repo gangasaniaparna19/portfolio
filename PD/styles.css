@@ -1,0 +1,115 @@
+/* Reset & Base */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background: white; color: #333; line-height: 1.6; }
+a { color: inherit; text-decoration: none; }
+
+
+/* Header & Navigation */
+.logo {
+  height: 220px;   /* increase size */
+  width: auto;    /* keeps aspect ratio */
+  object-fit: contain;
+  margin-right: 20px; /* optional spacing */
+}
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 80px;   /* reduce top-bottom padding so navbar height doesn’t blow up */
+  background: #1a2653;
+  color: white;
+  height: 80px;         /* lock navbar height */
+}
+
+
+.main-nav a {
+  margin-left: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+.main-nav a:hover {
+  color: #ff9800; /* accent orange on hover */
+}
+
+/* Intro Section */
+.intro {
+  max-width: 900px;
+  margin: 80px auto 40px;
+  padding: 0 20px;
+  text-align: center;
+}
+.intro h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #1a2653; /* primary blue */
+}
+.intro p {
+  font-size: 1.1em;
+  text-align: justify;
+  text-justify: inter-word;
+  color: #444;
+}
+
+/* Flow Steps Section */
+.flow-container {
+  max-width: 900px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+}
+.flow-container h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #1a2653; /* dark navy */
+}
+.steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+.step {
+  background: #ffffff;
+  width: 70%;
+  padding: 18px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 1.1em;
+  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+  text-align: center;
+  color: #1a2653;
+  border-left: 6px solid #1a2653; /* accent left bar */
+}
+.step:hover {
+  background: #1a2653;  /* primary blue */
+  color: white;
+  transform: translateY(-3px);
+  border-left-color: #ff9800; /* orange highlight */
+}
+
+/* Contact Section */
+.contact {
+  background: #ffffff;
+  padding: 50px 20px;
+  text-align: center;
+  border-top: 3px solid #1a2653;
+}
+.contact h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #1a2653;
+}
+.contact p a {
+  color: #5b5bad;
+  font-weight: bold;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  background: #1a2653;
+  color: white;
+  font-size: 0.9em;
+}
